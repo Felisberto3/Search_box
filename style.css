@@ -12,15 +12,17 @@
     transform: translate(-50%,-50%);
     display: flex;
     align-items: center;
-    width: 50%;
-    padding: 1rem;
+    padding: 10px;
+    background: #63616122;
 
-    background: #3332;
 }
 .seach_Box .searchText{
-    flex-grow: 1;
-    padding: 1rem;
     border: none;
+    outline: none;
+    background: transparent;
+    font-size: 18px;
+    width: 0;
+    border: 1px solid red;
 }
 
 .seach_Box .searchIcon {
@@ -32,4 +34,10 @@
     justify-content: center;
     border-radius: 50%;
     border: 1px solid red;
+    font-size: 20px;
+}
+.seach_Box:hover .searchText{
+    width: 250px;
+    padding: 1rem;
+    cursor: pointer;
 }
